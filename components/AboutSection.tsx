@@ -44,7 +44,7 @@ const AboutSection = () => {
               <span className="font-bold">{" self-motivated"}</span>, and
               <span className="font-bold">{" driven"}</span> software engineer
               based in Brooklyn, NY. Currently pursing a BS in Computer Science at City
-              College Grove School of Engineering, anticipated May 2024.
+              College Grove School of Engineering, anticipated May 2024. My hobbies and interests include programming, fishing, chess, and creating art.
             </p>
             <br />
             <a
