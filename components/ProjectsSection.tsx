@@ -6,14 +6,6 @@ import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs"
 
 const projects = [
   {
-    name: "Pirate Bay",
-    description:
-      "Pirate Bay Ecommerce is a React-Firebase web app that provides an online environment for pirates to sell and auction goods.",
-    image: "/pbay.jpg",
-    github: "https://github.com/MarkusCDev/Hosted-Pirate-Bay-Ecommerce.git",
-    link: "https://pbay-p.web.app/",
-  },
-  {
     name: "Encrypted Chat",
     description:
       "Encrypted Chat is a C/C++ app that enables a secure port, client to client communication utlizing OpenSSL's RSA AES-256 for encryption, SHA-512 HMAC for message integrity, and Diffie-Hellman key exchange for perfect forward secrecy.",
@@ -24,10 +16,18 @@ const projects = [
   {
     name: "Travel Experts",
     description:
-      "Travel recommendation website that uses ChatGPT and Google Map's API to recommend places to travel based on user input. Working In Progress coming soon: 7/30/2023",
-    image: "/travelexp.png",
+      "Travel recommendation website that uses ChatGPT and Google Map's API to recommend places to travel based on user input. Built using React, Node.js, Express.js, and Firebase.",
+    image: "/travelexperts.png",
     github: "https://github.com/MarkusCDev/Travel-Experts.git",
-    link: "https://github.com/MarkusCDev/Travel-Experts.git",
+    link: "http://digitalotion.com/",
+  },
+  {
+    name: "Pirate Bay",
+    description:
+      "Pirate Bay Ecommerce is a React-Firebase web app that provides an online environment for pirates to sell and auction goods.",
+    image: "/pbay.jpg",
+    github: "https://github.com/MarkusCDev/Hosted-Pirate-Bay-Ecommerce.git",
+    link: "https://pbay-p.web.app/",
   },
 ];
 

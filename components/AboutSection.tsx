@@ -7,12 +7,14 @@ const skills = [
   { skill: "CSS" },
   { skill: "JavaScript" },
   { skill: "Python" },
+  { skill: "MLL Models" },
   { skill: "C" },
   { skill: "C++" },
   { skill: "SQL" },
   { skill: "React" },
   { skill: "Next.js" },
   { skill: "Node.js" },
+  { skill: "Express.js" },
   { skill: "OpenSSL" },
   { skill: "Numpy" },
   { skill: "Git" },
@@ -22,6 +24,10 @@ const skills = [
   { skill: "Firebase" },
   { skill: "Jira" },
   { skill: "Burp Suite" },
+];
+
+const certs = [
+  { cert: "Security+" },
 ];
 
 const AboutSection = () => {
@@ -43,12 +49,15 @@ const AboutSection = () => {
               <span className="font-bold">{"highly ambitious"}</span>,
               <span className="font-bold">{" self-motivated"}</span>, and
               <span className="font-bold">{" driven"}</span> software engineer
-              based in Brooklyn, NY. Currently pursing a BS in Computer Science at City
-              College Grove School of Engineering, anticipated May 2024. My hobbies and interests include programming, fishing, chess, and creating art.
+              based in Brooklyn, NY. Currently pursing a BS in Computer Science
+              at City College Grove School of Engineering, anticipated May 2024.
+              My hobbies and interests include programming, fishing, chess, and
+              creating art.
             </p>
             <br />
             <a
-              href="/resume.pdf" download
+              href="/resume.pdf"
+              download
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -69,6 +78,19 @@ const AboutSection = () => {
                 );
               })}
             </div>
+            {/* <h1 className="text-2xl font-bold mb-6" style={{marginTop: "50px"}}>My Certifications</h1>
+            <div className="flex flex-wrap flex-row justify-center z-10 md:justify-start">
+              {certs.map((item, idx) => {
+                return (
+                  <p
+                    key={idx}
+                    className="bg-gray-200 px-4 py-2 mr-2 mt-2 text-gray-500 rounded font-semibold"
+                  >
+                    {item.cert}
+                  </p>
+                );
+              })}
+            </div> */}
           </div>
         </div>
       </div>
