@@ -6,6 +6,11 @@ import { usePathname } from "next/navigation"
 import { useTheme } from "next-themes"
 import { RiMoonFill, RiSunLine } from "react-icons/ri"
 import { IoMdMenu, IoMdClose } from "react-icons/io"
+import {
+  AiOutlineGithub,
+  AiOutlineLinkedin,
+} from "react-icons/ai";
+
 
 interface NavItem {
   label: string
@@ -37,11 +42,29 @@ export default function Navbar() {
       <div className="justify-between md:items-center md:flex">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
-            <Link to="home">
               <div className="container flex items-center space-x-2">
-                <h2 className="text-2xl font-bold">Markus Chmiel</h2>
+                {/* <h2 className="text-2xl font-bold">Markus Chmiel</h2> */}
+                <a
+                  href="https://github.com/MarkusCDev"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  <AiOutlineGithub
+                    className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-100"
+                    size={30}
+                  />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/markuscc/"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  <AiOutlineLinkedin
+                    className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-100"
+                    size={30}
+                  />
+                </a>
               </div>
-            </Link>
             <div className="md:hidden">
               <button
                 className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
@@ -77,7 +100,7 @@ export default function Navbar() {
                   >
                     {item.label}
                   </Link>
-                )
+                );
               })}
               {currentTheme === "dark" ? (
                 <button
@@ -99,5 +122,5 @@ export default function Navbar() {
         </div>
       </div>
     </header>
-  )
+  );
 }

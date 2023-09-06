@@ -3,31 +3,28 @@ import Image from "next/image"
 import resumeImg from "../public/resume.png"
 
 const skills = [
-  { skill: "HTML" },
-  { skill: "CSS" },
-  { skill: "JavaScript" },
   { skill: "Python" },
-  { skill: "MLL Models" },
-  { skill: "C" },
-  { skill: "C++" },
+  { skill: "C/C++" },
+  { skill: "Javascript" },
+  { skill: "HTML/CSS" },
   { skill: "SQL" },
-  { skill: "React" },
-  { skill: "Next.js" },
-  { skill: "Node.js" },
-  { skill: "Express.js" },
+  { skill: "NumPy" },
+  { skill: "Pandas" },
+  { skill: "PyTorch" },
   { skill: "OpenSSL" },
-  { skill: "Numpy" },
-  { skill: "Git" },
-  { skill: "MySQL" },
-  { skill: "Jupyter Notebooks" },
-  { skill: "Virtualbox" },
+  { skill: "React" },
+  { skill: "Express" },
+  { skill: "Next" },
+  { skill: "VirtualBox" },
   { skill: "Firebase" },
+  { skill: "MySQL" },
   { skill: "Jira" },
-  { skill: "Burp Suite" },
+  { skill: "TCPdump" },
 ];
 
 const certs = [
-  { cert: "Security+" },
+  { cert: "Google Cyberseucity Professional" },
+  // { cert: "Security+" },
 ];
 
 const AboutSection = () => {
@@ -45,11 +42,11 @@ const AboutSection = () => {
               Get to know me!
             </h1>
             <p>
-              Hi, my name is Markus and I am a{" "}
+              I am a{" "}
               <span className="font-bold">{"highly ambitious"}</span>,
               <span className="font-bold">{" self-motivated"}</span>, and
               <span className="font-bold">{" driven"}</span> software engineer
-              based in Brooklyn, NY. Currently pursing a BS in Computer Science
+              based in New York City. Currently pursing a BS in Computer Science
               at City College Grove School of Engineering, anticipated May 2024.
               My hobbies and interests include programming, fishing, chess, and
               creating art.
@@ -78,7 +75,7 @@ const AboutSection = () => {
                 );
               })}
             </div>
-            {/* <h1 className="text-2xl font-bold mb-6" style={{marginTop: "50px"}}>My Certifications</h1>
+            <h1 className="text-2xl font-bold mb-6" style={{marginTop: "50px"}}>My Certifications</h1>
             <div className="flex flex-wrap flex-row justify-center z-10 md:justify-start">
               {certs.map((item, idx) => {
                 return (
@@ -90,7 +87,7 @@ const AboutSection = () => {
                   </p>
                 );
               })}
-            </div> */}
+            </div>
           </div>
         </div>
       </div>
