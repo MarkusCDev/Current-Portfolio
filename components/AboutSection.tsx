@@ -23,7 +23,7 @@ const skills = [
 ];
 
 const certs = [
-  { cert: "Google Cyberseucity Professional" },
+  { cert: "Google Cyberseucity" },
   // { cert: "Security+" },
 ];
 
