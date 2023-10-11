@@ -26,10 +26,10 @@ const HeroSection = () => {
             <span className="font-semibold text-teal-600">
               Software Engineer{" "}
             </span>
-            based in Brooklyn, NY. Working towards a career in cybersecurity, dedicated
-            to strengthening digital defenses. Committed to innovative solutions
-            for enhanced system integrity and collaborating for a safer digital
-            future.
+            based in Brooklyn, NY. Working towards a career in cybersecurity,
+            dedicated to strengthening digital defenses. Committed to innovative
+            solutions for enhanced system integrity and collaborating for a
+            safer digital future.
           </p>
           {/* <Link
             to="projects"
@@ -44,7 +44,7 @@ const HeroSection = () => {
           </Link> */}
         </div>
       </div>
-      <div className="flex flex-row items-center text-center justify-center ">
+      <div className="flex flex-row items-center text-center justify-center">
         <Link
           to="about"
           activeClass="active"
@@ -53,7 +53,9 @@ const HeroSection = () => {
           offset={-100}
           duration={500}
         >
-          <HiArrowDown size={35} className="animate-bounce" />
+          <div>
+            <HiArrowDown size={35} className="animate-bounce" />
+          </div>
         </Link>
       </div>
     </section>
